@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>zms-wisr</title>
+
+    <meta name="description" content="" />
+    <meta name="author" content="Hakim El Hattab" />
+
+    <meta name="viewport" content="width=700, user-scalable=no" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Roboto"
+      rel="stylesheet"
+    />
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <nav class="toc">
+      <ul>
+        <li><a href="main">main</a></li>
+        <li>
+          <a href="#calc">wisr tax calculator</a>
+          <ul>
+            <li><a href="#calc-calc">tax calculator</a></li>
+            <li><a href="#calc-docu">documentation</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#css">CSS Editor</a>
+          <ul>
+            <li><a href="#css-fonts">Custom Fonts</a></li>
+            <li><a href="#css-developer-mode">Developer Mode</a></li>
+          </ul>
+        </li>
+      </ul>
+      <svg
+        class="toc-marker"
+        width="200"
+        height="200"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke="#444"
+          stroke-width="3"
+          fill="transparent"
+          stroke-dasharray="0, 0, 0, 1000"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          transform="translate(-0.5, -0.5)"
+        />
+      </svg>
+    </nav>
+
+    <article class="contents">
+      <section id="main">
+        <h2>js lab - zms</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
+          dolorem soluta praesentium id quasi. Voluptatum, dolor velit, enim
+          tenetur vitae obcaecati voluptas consequatur, fugiat recusandae modi
+          numquam ipsum sapiente quo?
+        </p>
+
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
+          dolorem soluta praesentium id quasi. Voluptatum, dolor velit, enim
+          tenetur vitae obcaecati voluptas consequatur, fugiat recusandae modi
+          numquam ipsum sapiente quo?
+        </p>
+
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
+          dolorem soluta praesentium id quasi. Voluptatum, dolor velit, enim
+          tenetur vitae obcaecati voluptas consequatur, fugiat recusandae modi
+          numquam ipsum sapiente quo?
+        </p>
+
+        <h2>Slides for Developers</h2>
+        <p>
+          We strive to make Slides a great and flexible tool for developers.
+          Presentations created on Slides are HTML documents under the hood, so
+          generally anything that HTML can do, Slides can do. We make it easy to
+          access and edit the underlying HTML and CSS through the
+          <a href="#dev">Developer Mode</a>.
+        </p>
+        <p>
+          There's also an API for creating new presentations with preset content
+          and we're aiming to add additional APIs in the future.
+        </p>
+      </section>
+
+      <section>
+        <div id="calc-calc">
+          <h2>tax calculator</h2>
+          <p>
+            The Slides editor has a developer mode which is useful if you know a
+            bit of HTML and CSS. With this mode active you will be able to
+            modify the underlying HTML of your deck, allowing you to make
+            adjustments that the Slides editor does not provide interface
+            options for.
+          </p>
+          <p>
+            To enable the developer mode open the editor settings in the bottom
+            left corner:
+          </p>
+        </div>
+
+        <div id="calc-docu">
+          <h3>documentation</h3>
+          <p>
+            The per-slide HTML editor can be accessed from the slide options
+            area. It gives you raw access to the current slide's HTML, allowing
+            you to change anything you like. Note that some elements, such as
+            &lt;script&gt; and &lt;link&gt;, are not allowed for security
+            reasons.﻿
+          </p>
+        </div>
+
+        <div id="dev-element-classes">
+          <h3>Element Classes</h3>
+          <p>
+            As a paying Slides customer you have access to the
+            <a href="#css">CSS editor</a> which allows you to add custom styles
+            to your deck. By turning on the developer mode a new "class name"
+            field will appear for any block that you focus. This allows you to
+            easily target a specific element with your CSS.
+          </p>
+          <p>
+            Here's an example that defines an "upside-down" class using custom
+            CSS and applies it to a text block.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div id="css">
+          <h2>
+            CSS Editor
+            <a href="/pricing" class="header-secondary-text">(Requires Pro)</a>
+          </h2>
+          <p>
+            The CSS editor lets you author custom styles for your presentation
+            with a real-time preview of the result. It's available as an option
+            inside of the Style panel of the presentation editor.
+          </p>
+          <p>
+            The editor preprocesses styles using
+            <a href="http://lesscss.org/">LESS</a>, though you're free to write
+            plain CSS as well. We apply the styles in real-time as you type so
+            there's no need to leave the editor or even press a refresh button
+            to see what you're getting. Note that when your styles are saved
+            they will be automatically wrapped in a ".reveal {}" selector to
+            avoid conflicts with other page styles.
+          </p>
+        </div>
+        <div id="css-fonts">
+          <h3>Custom Fonts</h3>
+          <p>
+            You can load custom fonts from Typekit and Google fonts and apply
+            them using custom CSS.
+            <a
+              href="http://help.slides.com/knowledgebase/articles/1077976-custom-fonts-pro"
+              >Find out more</a
+            >.
+          </p>
+        </div>
+        <div id="css-developer-mode">
+          <h3>Developer Mode</h3>
+          <p>
+            If you turn on the <a href="#dev">developer mode</a> you can also
+            add custom classes to any focused element. This is a convenient way
+            to easily apply your CSS to specific elements.
+          </p>
+        </div>
+      </section>
+    </article>
+
+    <script src="script.js"></script>
+
+    <!--
+		<div class="credits">
+			<a href="https://twitter.com/hakimel">Follow @hakimel</a>
+			<a href="https://github.com/hakimel/css/tree/master/progress-nav">Source on GitHub</a>
+			<a href="http://hakim.se">More at hakim.se</a>
+		</div>
+
+		<style type="text/css" media="screen">
+			.credits {
+				position: fixed;
+				left: 3em;
+				bottom: 4em;
+				font-size: 1em;
+				z-index: 20;
+				color: #444;
+				vertical-align: middle;
+			}
+
+			.credits * + * {
+				margin-top: 15px;
+			}
+
+			.credits a {
+				display: block;
+				padding: 8px 10px;
+				color: #777;
+				border: 2px solid #bbb;
+				background: #fff;
+				text-decoration: none;
+			}
+
+			.credits a:hover {
+				border-color: #555;
+				color: #222;
+			}
+
+			@media screen and (max-height: 700px) {
+				.credits {
+					display: none;
+				}
+			}
+		</style>
+		--></body>
+</html>
